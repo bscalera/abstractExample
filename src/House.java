@@ -1,11 +1,12 @@
 
 public class House extends BuildingAbstract{
 
-	private static int walls;
-	private static int angle;
-	private static int doors;
-	private static int windows;
+	int walls;
+	int angle;
+	int doors;
+	int windows;
 	
+	/*
 	House()
 	{
 		walls = 11;
@@ -13,21 +14,31 @@ public class House extends BuildingAbstract{
 		doors = 4;
 		windows = 7;
 	}
+	*/
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		/*
 		House exampleHouse = new House();
 		System.out.print(exampleHouse.buildingType());
 		System.out.print(exampleHouse.wallsNumber(walls));
 		System.out.print(exampleHouse.roofAngle(angle));
 		System.out.print(exampleHouse.doorNumber(doors));
 		System.out.println(exampleHouse.windowNumber(windows));
+		*/
 	}
 	
-	
+	public String stringBuilder()
+	{
+		return this.buildingType()
+				+ this.wallsNumber(walls)
+				+ this.roofAngle(angle)
+				+ this.doorNumber(doors)
+				+ this.windowNumber(windows);
+	}
 
 	@Override
-	String buildingType() {
+	protected String buildingType() {
 		// TODO Auto-generated method stub
 		return "A house ";
 	}
@@ -50,7 +61,7 @@ public class House extends BuildingAbstract{
 		return doors + " doors, ";
 	}
 	
-	String windowNumber(int windows) {
+	private String windowNumber(int windows) {
 		// TODO Auto-generated method stub
 		return "and " + windows + " windows.";
 	}

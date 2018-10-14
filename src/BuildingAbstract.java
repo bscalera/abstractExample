@@ -1,7 +1,7 @@
 
 abstract public class BuildingAbstract {
 
-	abstract String buildingType();
+	protected abstract String buildingType();
 	
 	abstract String wallsNumber(int walls);
 
