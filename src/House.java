@@ -6,26 +6,9 @@ public class House extends BuildingAbstract{
 	int doors;
 	int windows;
 	
-	/*
-	House()
-	{
-		walls = 11;
-		angle = 45;
-		doors = 4;
-		windows = 7;
-	}
-	*/
-	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*
-		House exampleHouse = new House();
-		System.out.print(exampleHouse.buildingType());
-		System.out.print(exampleHouse.wallsNumber(walls));
-		System.out.print(exampleHouse.roofAngle(angle));
-		System.out.print(exampleHouse.doorNumber(doors));
-		System.out.println(exampleHouse.windowNumber(windows));
-		*/
+		
 	}
 	
 	public String stringBuilder()
@@ -46,7 +29,7 @@ public class House extends BuildingAbstract{
 	@Override
 	String wallsNumber(int walls) {
 		// TODO Auto-generated method stub
-		return "with " + walls + " walls, ";
+		return "has " + walls + " walls, ";
 	}
 
 	@Override
